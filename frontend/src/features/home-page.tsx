@@ -147,7 +147,7 @@ export function HomePage() {
 
           <div className="flex"></div>
           <h1
-            className="bg-clip-text font-heading text-4xl font-bold text-transparent sm:text-6xl lg:text-4xl 3xl:text-6xl 4xl:text-7xl"
+            className="bg-clip-text font-heading text-3xl font-bold text-transparent sm:text-6xl lg:text-4xl 3xl:text-6xl 4xl:text-7xl"
             style={{ backgroundImage: "var(--gradient-teal-blue)" }}
           >
             <TextType
@@ -187,7 +187,7 @@ export function HomePage() {
             <Button
               size="lg"
               nativeButton={false}
-              className="border-none text-white 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
+              className="border-none text-white h-5 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
               style={{ backgroundImage: "var(--gradient-teal-blue)" }}
               render={
                 <a
@@ -205,7 +205,7 @@ export function HomePage() {
               size="lg"
               variant="outline"
               nativeButton={false}
-              className="3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
+              className="h-5 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
               render={
                 <a
                   href="https://github.com/JosepBona/Portfolio"
@@ -225,24 +225,25 @@ export function HomePage() {
                     size="lg"
                     variant="outline"
                     aria-label="Download CV"
-                    className="3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
+                    className="h-5 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
                   >
                     <DownloadIcon className="size-5" />
-                    Download CV
+                    <span className="sm:hidden">CV</span>
+                    <span className="hidden sm:inline">Download CV</span>
                   </Button>
                 }
               />
               <DropdownMenuContent align="center">
                 <DropdownMenuItem
                   render={
-                    <a href="/CV%20Josep%20Bona.pdf" download>
+                    <a href="/Josep_Bona_CV_ES.pdf" download>
                       Español
                     </a>
                   }
                 />
                 <DropdownMenuItem
                   render={
-                    <a href="/EN_Josep_Bona_CV.pdf" download>
+                    <a href="/Josep_Bona_CV_EN.pdf" download>
                       English
                     </a>
                   }
