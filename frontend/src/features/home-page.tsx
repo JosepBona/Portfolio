@@ -187,7 +187,7 @@ export function HomePage() {
             <Button
               size="lg"
               nativeButton={false}
-              className="border-none text-white h-5 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
+              className="border-none text-white 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
               style={{ backgroundImage: "var(--gradient-teal-blue)" }}
               render={
                 <a
@@ -205,7 +205,7 @@ export function HomePage() {
               size="lg"
               variant="outline"
               nativeButton={false}
-              className="h-5 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
+              className="3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
               render={
                 <a
                   href="https://github.com/JosepBona/Portfolio"
@@ -225,7 +225,7 @@ export function HomePage() {
                     size="lg"
                     variant="outline"
                     aria-label="Download CV"
-                    className="h-5 3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
+                    className="3xl:h-14 3xl:px-8 3xl:text-xl 4xl:h-16 4xl:px-10 4xl:text-2xl"
                   >
                     <DownloadIcon className="size-5" />
                     <span className="sm:hidden">CV</span>
